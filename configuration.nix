@@ -8,11 +8,12 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/network.nix
       ./modules/graphics.nix
-	  ./modules/applications.nix
+      ./modules/applications.nix
       ./modules/steam.nix
       ./modules/development.nix
-	  ./modules/desktop-environment.nix
+      ./modules/gui.nix
     ];
 
   # Bootloader.
@@ -20,15 +21,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.initrd.luks.devices."luks-5dbc863e-154c-4350-afd8-9a2e61c3b7e0".device = "/dev/disk/by-uuid/5dbc863e-154c-4350-afd8-9a2e61c3b7e0";
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Vancouver";

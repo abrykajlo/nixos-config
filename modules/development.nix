@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
 	clang
+    vscode
 	curl
     git
 	kitty
@@ -9,5 +10,7 @@
     rustup
 	zig
 	zls
+	hugo
+	go
   ];
 }

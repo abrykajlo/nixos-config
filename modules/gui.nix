@@ -7,8 +7,9 @@
   };
 
   environment.systemPackages = with pkgs; [
+    eww
     font-awesome
-	rofi
+    rofi
     waybar
   ];
 }

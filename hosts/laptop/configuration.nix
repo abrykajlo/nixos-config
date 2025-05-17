@@ -8,12 +8,12 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/network.nix
-      ./modules/graphics.nix
-      ./modules/applications.nix
-      ./modules/steam.nix
-      ./modules/development.nix
-      ./modules/gui.nix
+      ../../modules/network.nix
+      ../../modules/graphics.nix
+      ../../modules/applications.nix
+      ../../modules/steam.nix
+      ../../modules/development.nix
+      ../../modules/gui.nix
     ];
 
   # Bootloader.

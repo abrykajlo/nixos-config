@@ -1,7 +1,10 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    discord
     firefox
-	obsidian
+    maestral
+    maestral-gui
+    obsidian
   ];
 }

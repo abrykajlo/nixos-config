@@ -1,16 +1,19 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-	clang
+    clang
     vscode
-	curl
+    curl
     git
-	kitty
+    kitty
+    usbutils
+    gnumake
     neovim
     rustup
-	zig
-	zls
-	hugo
-	go
+    tmux
+    zig
+    zls
+    hugo
+    go
   ];
 }
